@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContextDefaults ColorSet="White_Black" Style="FontNormal22" FontStyle="Stroke" Name="IntroScreen" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\ForgeUI_Assets\Controls.xsd"> 
+  <Box																		Anchor="C,C" Size="parent,parent" Color="0,0,0,255"/>
+  
+  <Box																		Anchor="C,C" Size="1280,700" Padding="0,0" Color="0,0,0,0">
+  		<Button ID="CopyrightAccept" Color="0,0,0,0" String="LOC_COPYRIGHT_ACCEPT"/>
+		<Button ID="SecretButton" Offset="930,190" Size="110,90" Color="0,0,0,0"/>
+  </Box>
+</ContextDefaults>
+

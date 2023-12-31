@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="185e05a2-c6ac-4e09-b257-2bdb1f3714cd" version="1">
+  <Properties>
+    <Name>Auto Record Goody Huts</Name>
+    <Teaser>Auto record your goody hut rewards with a map tack.</Teaser>
+    <Description>Auto record your goody hut rewards with a map tack.</Description>
+    <Authors>wltk</Authors>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+
+  <InGameActions>
+    <AddGameplayScripts id="goody_huts_detection">
+      <File>gameplay/goody_huts_detection.lua</File>
+    </AddGameplayScripts>
+    <AddUserInterfaces id="auto_record_goody_huts">
+      <Properties>
+        <Context>InGame</Context>
+      </Properties>
+      <File>auto_record_goody_huts.xml</File>
+    </AddUserInterfaces>
+    <ImportFiles id="files">
+      <File>gameplay/goody_huts_detection.lua</File>
+      <File>auto_record_goody_huts.lua</File>
+      <File>auto_record_goody_huts.xml</File>
+    </ImportFiles>
+  </InGameActions>
+
+  <Files>
+    <File>gameplay/goody_huts_detection.lua</File>
+    <File>auto_record_goody_huts.lua</File>
+    <File>auto_record_goody_huts.xml</File>
+  </Files>
+</Mod>

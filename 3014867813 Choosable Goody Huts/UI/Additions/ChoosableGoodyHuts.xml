@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ChoosableGoodyHuts -->
+<!-- Author: Konomi -->
+<!-- DateCreated: 7/24/2023 11:48:41 -->
+<Context>
+
+	<Container Style="FullScreenVignetteConsumer"/>
+	<BoxButton ID="ScreenConsumer" Color="0,0,0,0" Size="parent,parent" ConsumeMouseButton="1" ConsumeMouseWheel="1"/>
+
+	<Grid ID="DropShadow" Size="595,250" Anchor="C,C" Offset="0,0" Style="DropShadow2" Color="255,255,255,200">
+		<Grid ID="Window" Size="parent-5,parent+8" Anchor="C,C" Offset="0,0" SizePadding="0,20" Style="EventPopupFrame">
+
+			<Grid Style="EventPopupTitleBar" Size="parent-32,65" Offset="0,17" Anchor="C,T">
+				<Label ID="EventTitle" Style="EventPopupTitle" Offset="0,2" Align="Center" WrapWidth="420" Anchor="C,C" String="LOC_KNM_CHOOSE_GOODYHUT_TITLE"/>
+			</Grid>
+
+			<Container ID="MainContainer" Size="parent-32,570" Offset="0,90" Anchor="C,T">
+				<Stack ID="ImageDescStack" Size="parent,auto" Anchor="C,T" StackGrowth="Down" StackPadding="10">
+					<!-- <Container Size="parent,auto" MinSize="0,60"> -->
+					<Label ID="EventDescription" Style="EventPopupDescription" Offset="0,10" Align="Center" WrapWidth="parent-20" Anchor="C,C" String="LOC_KNM_CHOOSE_GOODYHUT_DESC"/> 
+					<!-- </Container> -->
+					<PullDown ID="Pulldown" Anchor="C,T" Offset="0,20" AutoFlip="1" ScrollThreshold="375" Size="500,24" SpaceForScroll="0" AutoSizePopup="1">
+						<ButtonData>
+							<GridButton Size="194,28" Style="FontNormal14" FontStyle="glow" Color0="208,212,217,255" Color1="16,43,67,100">
+								<GridData Texture="Controls_DropDownControl" StateOffsetIncrement="0,24"	SliceCorner="10,12"	SliceSize="1,1"		SliceTextureSize="45,24" />
+							</GridButton>
+						</ButtonData>
+						<GridData Offset="0,24" Texture="Controls_DropdownPanel" InnerPadding="3,6" SliceCorner="10,10" SliceTextureSize="22,22"/>
+						<ScrollPanelData Anchor="C,C" Vertical="1" Size="parent,parent" AutoScrollBar="1" >
+							<ScrollBar Style="Slider_Blue" Anchor="R,C" AnchorSide="O,I"   />
+						</ScrollPanelData>
+						<StackData StackGrowth="Bottom" Anchor="C,T"/>
+						<InstanceData Name="PullDownEntry">
+							<GridButton ID="Button" Size="536,24" Texture="Controls_ButtonControl" SliceCorner="12,6" SliceTextureSize="45,24"  StateOffsetIncrement="0,24" Style="FontNormal14" FontStyle="glow" Color0="208,212,217,255"	Color1="16,43,67,100"/>
+						</InstanceData>
+					</PullDown>
+				</Stack>
+
+
+				<!-- <Grid ID="EventEffectsContainer" Style="EventPopupEffectsDeco" Anchor="C,T" Size="parent-30,auto" Offset="0,100" AutoSizePadding="0,10"> -->
+				<!-- <ScrollPanel Size="parent-25,parent-20" Anchor="C,C" Vertical="1" AutoScrollBar="1"> -->
+				<!-- <ScrollBar Size="11,100" Anchor="R,C"  Offset="0,0" Style="ScrollVerticalBar" /> -->
+				<!-- <Stack ID="ChooseStack" Anchor="C,C" StackPadding="5" /> -->
+				<!-- </ScrollPanel> -->
+				<!-- </Grid> -->
+			</Container>
+
+			<Stack ID="ButtonStack" Anchor="C,B" Offset="0,26" StackPadding="20" StackGrowth="Right">
+				<GridButton ID="OKButton" Style="MainButton" Size="220,40" Anchor="C,T" Offset="0,0" String="LOC_OK" Disabled="1"/>
+				<GridButton ID="ContinueButton" Style="MainButton" Size="220,40" Anchor="C,T" Offset="0,0" String="LOC_CANCEL"/>
+			</Stack>
+		</Grid>
+	</Grid>
+
+	<!-- ==================================================================	-->
+	<!--	Instances																													-->
+	<!-- ==================================================================	-->
+
+	<Instance	Name="ChooseGoodyHuts">
+		<Grid ID="Top" Anchor="C,T" Size="parent-30,auto" Offset="0,0" Style="EventPopupEffectsDeco" AutoSizePadding="0,10">
+		</Grid>
+	</Instance>
+</Context>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="3fe34c3b-915c-4776-9cb8-f42ab5b92f80" version="1">
+  <Properties>
+    <Name>Quick Start</Name>
+    <Description>You have seen the intro logos and have accepted the EULA before. This mod takes you straight to the main menu.</Description>
+    <CompatibleVersions xmlns="http://schemas.microsoft.com/developer/msbuild/2003">2.0</CompatibleVersions>
+    <Teaser>Removes logos and EULA.</Teaser>
+    <Authors>F'mble (Inspired), Odin Vex (Reworked)</Authors>
+    <SpecialThanks>The Red One</SpecialThanks>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>0</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+  </Properties>
+  <FrontEndActions>
+    <ImportFiles id="QuickStartImportFiles">
+      <File>Base/Assets/UI/FrontEnd/IntroScreen.lua</File>
+      <File>Base/Assets/UI/FrontEnd/IntroScreen.xml</File>
+      <File>Base/Platforms/Windows/Movies/logos.bk2</File>
+      <File>Base/Platforms/Windows/Movies/LOGO_2KFiraxis.bk2</File>
+      <File>steamassets/base/assets/ui/frontend/introscreen.lua</File>
+      <File>steamassets/base/assets/ui/frontend/introscreen.xml</File>
+      <File>steamassets/base/platforms/windows/movies/bink2_aspyr_logo_black_white_1080p_30fps.bk2</File>
+      <File>steamassets/base/platforms/windows/movies/logo_2kfiraxis.bk2</File>
+      <File>steamassets/base/platforms/windows/movies/logos.bk2</File>
+    </ImportFiles>
+  </FrontEndActions>
+  <Files>
+    <File>Base/Assets/UI/FrontEnd/IntroScreen.lua</File>
+    <File>Base/Assets/UI/FrontEnd/IntroScreen.xml</File>
+    <File>Base/Platforms/Windows/Movies/logos.bk2</File>
+    <File>Base/Platforms/Windows/Movies/LOGO_2KFiraxis.bk2</File>
+    <File>steamassets/base/assets/ui/frontend/introscreen.lua</File>
+    <File>steamassets/base/assets/ui/frontend/introscreen.xml</File>
+    <File>steamassets/base/platforms/windows/movies/bink2_aspyr_logo_black_white_1080p_30fps.bk2</File>
+    <File>steamassets/base/platforms/windows/movies/logo_2kfiraxis.bk2</File>
+    <File>steamassets/base/platforms/windows/movies/logos.bk2</File>
+  </Files>
+</Mod>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0ba8320b-4c3e-4074-983e-2bf7510f86e8" version="1">
+  <Properties>
+    <Name>LOC_CHOOSABLE_GOODY_HUTS_MOD_NAME</Name>
+    <Description>LOC_CHOOSABLE_GOODY_HUTS_MOD_DESC</Description>
+    <Created>1692021356</Created>
+    <Teaser>LOC_CHOOSABLE_GOODY_HUTS_MOD_TEASER</Teaser>
+    <Authors>LOC_CHOOSABLE_GOODY_HUTS_MOD_AUTHOR</Authors>
+    <SpecialThanks>LOC_CHOOSABLE_GOODY_HUTS_MOD_THANKS</SpecialThanks>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <LocalizedText>
+    <Text id="LOC_CHOOSABLE_GOODY_HUTS_MOD_NAME">
+      <en_US>Choosable Goody Huts</en_US>
+      <zh_Hans_CN>自选部落村庄奖励</zh_Hans_CN>
+    </Text>
+    <Text id="LOC_CHOOSABLE_GOODY_HUTS_MOD_DESC">
+      <en_US>Allows human players to choose a reward (instead of a random reward) for the turn they visit a tribal village.</en_US>
+	  <zh_Hans_CN>允许人类玩家在踩到部落村庄后的该回合内自选奖励（而不是获得随机奖励）。</zh_Hans_CN>
+    </Text>
+    <Text id="LOC_CHOOSABLE_GOODY_HUTS_MOD_TEASER">
+      <en_US>Allows human players to choose a reward after visiting a tribal village.</en_US>
+      <zh_Hans_CN>允许人类玩家踩到部落村庄后自选奖励。</zh_Hans_CN>
+    </Text>
+    <Text id="LOC_CHOOSABLE_GOODY_HUTS_MOD_THANKS">
+      <en_US>PhantomJ_M, UzukiShimamura</en_US>
+      <zh_Hans_CN>PhantomJ_M，优妮酱</zh_Hans_CN>
+    </Text>
+    <Text id="LOC_CHOOSABLE_GOODY_HUTS_MOD_AUTHOR">
+      <en_US>Konomi</en_US>
+      <zh_Hans_CN>榊野木乃实</zh_Hans_CN>
+    </Text>
+  </LocalizedText> 
+  <InGameActions>
+    <AddUserInterfaces id="UI">
+      <Properties>
+        <Context>InGame</Context>
+        <LoadOrder>1000</LoadOrder>
+      </Properties>
+      <File>UI/Additions/ChoosableGoodyHuts.xml</File>
+    </AddUserInterfaces>
+    <UpdateText id="Text">
+      <File>Text/ChoosableGoodyHuts_zh_CN.sql</File>
+      <File>Text/ChoosableGoodyHuts_en_US.sql</File>
+    </UpdateText>
+    <UpdateDatabase id="Data">
+      <Properties>
+        <LoadOrder>100000</LoadOrder>
+      </Properties>
+      <File>Data/ChoosableGoodyHuts.sql</File>
+    </UpdateDatabase>
+    <AddGameplayScripts id="Script">
+      <File>Scripts/ChoosableGoodyHuts.lua</File>
+    </AddGameplayScripts>
+    <UpdateIcons id="Icon">
+      <File>Data/ChoosableGoodyHuts_Icons.sql</File>
+    </UpdateIcons>
+    <ImportFiles id="Import">
+      <File>UI/Replacements/NotificationPanel_ChoosableGoodyHuts.lua</File>
+      <File>Textures/ChoosableGoodyHuts100.dds</File>
+      <File>Textures/ChoosableGoodyHuts40.dds</File>
+    </ImportFiles>
+  </InGameActions>
+  <Files>
+    <File>Data/ChoosableGoodyHuts.sql</File>
+    <File>Data/ChoosableGoodyHuts_Icons.sql</File>
+    <File>Scripts/ChoosableGoodyHuts.lua</File>
+    <File>Textures/ChoosableGoodyHuts100.dds</File>
+    <File>Textures/ChoosableGoodyHuts40.dds</File>
+    <File>Text/ChoosableGoodyHuts_en_US.sql</File>
+    <File>Text/ChoosableGoodyHuts_zh_CN.sql</File>
+    <File>UI/Additions/ChoosableGoodyHuts.lua</File>
+    <File>UI/Additions/ChoosableGoodyHuts.xml</File>
+    <File>UI/Replacements/NotificationPanel_ChoosableGoodyHuts.lua</File>
+  </Files>
+</Mod>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d3c12d9e-9547-4090-a98b-4bb363df6c18" version="1">
+  <Properties>
+    <Name>LOC_CAN_HARVEST_LAS_RESOURCES</Name>
+    <Description>Harvest Luxury and Strategic resources By Sakemy.[NEWLINE][NEWLINE]这里是Sakemy。本次的mod让所有奢侈和战略资源变为可收获。[NEWLINE][NEWLINE]this mod is Harvest All Luxury and Strategic resources.[NEWLINE][NEWLINE]这里是Kunsmendon，这个mod已经重写了构建，已经不需要更新也不会再更新了（也许吧）</Description>
+    <CustomProperties></CustomProperties>
+    <Created>1599630623</Created>
+    <Teaser>Harvest Luxury and Strategic resources</Teaser>
+    <Authors>Sakemy/Kunsmendon</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <LocalizedText>
+	  <Text id="LOC_CAN_HARVEST_LAS_RESOURCES">
+		  <en_US>[COLOR_FLOAT_FOOD]Harvest Luxury and Strategic resources</en_US>
+		  <zh_Hans_CN>[COLOR_FLOAT_FOOD]可收获奢侈和战略资源</zh_Hans_CN>
+	 </Text>
+	</LocalizedText>
+  <References>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
+  </References>
+  <InGameActions>
+    <UpdateDatabase id="database">
+      <Properties>
+        <LoadOrder>65534</LoadOrder>
+      </Properties>
+      <File>Harvest Lux and Str Rework by Kunsmendon.sql</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>Harvest Lux and Str Rework by Kunsmendon.sql</File>
+  </Files>
+</Mod>
